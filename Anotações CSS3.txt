@@ -1,0 +1,116 @@
+CSS3:
+
+Cria-se regras de estilos para elementos ou grupo de elementos que formatam a página.
+A regra do CSS é formada por um seletor ou grupo de seletores. Dentro das chaves, tem a declaração que é formada por uma propriedade e um valor.
+
+Id e Classes:
+
+Podem representar quaisquer tipos de elementos e diferenças entre eles.
+Características: 
+*No HTML a classe é representada com a palavra classe e o ID com id mesmo, ja no CSS classe é . e id é #.
+*O id no CSS só pode ser usado uma vez na página. 
+
+O navegador representa cada documento do HTML como uma caixa retangular que chamamos de Box Model.
+As 4 áreas do Box Model: 
+Margin - espaçamentos entre os elementos.
+Border(bordas) - Circundam o padding e o content(conteúdo), podendo alterar a aparência delas como largura e cor.
+Padding -  É o espaçamento entre a borda e o conteúdo.
+Content(conteúdo) - é o que o bloco representa, ex: um texto, imagem ou um vídeo. 
+
+Padding e Margin:
+
+Formas de declarar o padding:
+
+.post{
+padding: 15px(para o topo do eixo y) 10px(para a direita) 5px(para a parte inferior) 0(para o lado esquerdo);
+}
+
+.post{
+padding: 10px(para a parte superior e inferior do eixo y) 5px(para o lado esquerdo e direito do eixo x); 
+}
+
+.post{
+padding-top: 15px; (Topo)
+padding-rigth: 10px; (Direita)
+padding-bottom: 5px; (Inferior)
+padding-left: 0; (Esquerda)
+}
+
+Border:
+Pode ter 3 valores, sendo largura cor e estilo.
+Largura: pode ser representada por varias unidades, ex: pixel, centímetros, milímetros. 
+Cor: nome da cor em inglês ou o código exadecimal #000f.
+Estilo: Pode ser sólido, pontilhada, tracejada. 
+
+.post{
+border: 3px solid blue;
+border-top: 2px dotted green;
+border-right: 4px dashed pink;
+}
+
+Para aspectos especificos da borda pode usar
+
+border-width: 3px; Lagura da borda.
+boder-color: #505050; Cor da borda.
+border-style: solid; Estilo do contorno da borda.
+
+Mudar um aspecto da borda, apenas de um lado:
+
+.post {
+border-top-width: 3px;
+border-top-color: blue;
+border-top-style: solid;
+}
+
+Border-radius : Permite arredondar os lados da borda.
+
+As medidas mais utilizadas são: px e %, colocando apenas um varlor altera todos os cantos do elemento.
+border-radius: 10px;
+border-radius: 50%;
+border-radius: 10% 20%;
+border-radius: 10% 20% 15% 22%;
+
+Font-family: Altera a fonte do texto.
+
+#title{
+font-family: Verdana; 
+}
+
+#title{
+font-family: Verdana, Arial; (Caso a primeira fonte não funcione a segunda entra como um backup).
+}
+
+#tilte{
+font-size:30px;(Altera o tamanho do texto)
+}
+
+font-style: Altera o estilo do texto
+font-style: normal (valor padrão, mostra a fonte do jeito que ela é)
+font-style:italic (muda a fonte para um pouco mais inclinada)
+
+font-weight: Altera o peso do texto 
+normal: comum 
+bold: negrito
+
+Alterar todo o texto entre maiuscula e minuscula, colocando linhas também entre os textos.
+#title {
+text-transform: uppercase;
+}
+
+Listas ordenadas ou não ordenadas:
+
+list-style-type: Altera os marcadores das listas
+
+ul{list-style-type:square;}Atera o simbolo para um quadrado
+ol{list-style-type: upper-roman;} Altera o simbolo para algarismo romano.
+ul{list-style-type: "\1F44D";} Mostra emogi de um joia
+ul{list-style-image: url("linkdaimagem.png");}adiciona imagem na lista como marcadores
+
+Dimensão e alinhamento:
+
+Width: Ajusta a largura.
+Height: Ajusta altura.
+Max-width: Largura máxima que o elemento pode ter.
+Max-height: Altura máxima que o elemento pode ter.
+Margin: Serve para colocar o espaçamento entre o elemento 
+text align: Alinha os textos.
